@@ -1,0 +1,19 @@
+#配置相关的信息，优先级高
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lhh1994hello/config-center.git #指定git仓库的地址
+          search-paths: respo #配置仓库路径
+          username: 1497392219@qq.com
+          password: Ll2463233
+      label: master
+
+#配置中心端口号好像不写的话默认是8761，
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://106.14.155.20:9001/eureka/

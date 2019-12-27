@@ -1,11 +1,2 @@
-spring:
-  application:
-    name: config-client
-  cloud:
-    config:
-      label: master
-      profile: pro
-      uri: http://localhost:8888/
-
 server:
-  port: 8881
+  port: 9003

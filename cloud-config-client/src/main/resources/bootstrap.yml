@@ -1,0 +1,13 @@
+#配置放到application文件中读取不到
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      profile: pro
+      uri: http://106.14.155.20:9002/ #服务配置中心路径
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://106.14.155.20:9001/eureka/ #指定服务注册中心的地址
